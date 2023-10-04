@@ -1,0 +1,692 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:aliceblue;
+}
+/* header nav responsive nav header container -- started */
+header{
+    width: 100%;
+    /* height: 600px; */
+    padding: 0 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    width: 75%;
+    height: 70px;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav h3{
+    font-style: italic;
+    font-size: 25px;
+
+}
+header nav ul{
+    width: 50%;
+    height: 35px;
+    background-color: honeydew;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+header nav ion-icon{
+   display: none;
+}
+header nav ul li{
+    
+}
+header nav ul li a{
+    color:rgba(0, 0, 0, 0.699);
+    font-size: 19px;
+}
+header nav h4{
+    /* width: 13%; */
+    height: 30px;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav h4 i{
+    font-size: 22px;
+    color: rgb(72, 0, 255);
+}
+header nav h4 a{
+    font-size: 18px;
+    color: black;
+
+}
+
+header .header-container{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/HOME_piza-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    /* background-attachment: fixed; */
+}
+header .header-container .food{
+    width: 200px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.299);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 0 270px;
+    
+}
+header .header-container .food h2{
+    font-size: 30px;
+    color: white;
+}
+header .header-container .food h3{
+    font-size: 15px;
+    color: goldenrod;
+}
+header .header-container .food button{
+    width: 120px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: brown;
+    color: white;
+}
+@media only screen and (max-width:800px){
+    header nav{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:650px){
+    header nav ul{
+        width: 100%;
+        height: 87%;
+        padding: 0 0 20px 0;
+        background-color: red;
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* bottom: 100px; */
+        top: 68px;
+        right: 100%;
+        z-index: 15;
+        transition: 0.3s ease all;
+    }
+    header nav ion-icon{
+        display: block;
+        position: absolute;
+        color: blueviolet;
+        z-index: 1;
+        top:15px;
+        right: 5px;
+        font-size: 35px;
+    }
+    header nav h3{
+        font-size: 18px;
+    }
+    header nav h4 i{
+        font-size: 15px;
+    }
+    header nav h4 a{
+        font-size: 12px;
+    }
+
+}
+
+.hamburger-classlist{
+    right: 0;
+}
+@media only screen and (max-width:900px){
+    header .header-container .food{
+        margin: 0 0 0 130px;
+    }
+    
+}
+@media only screen and (max-width:490px){
+    header .header-container{
+        justify-content: center;
+        align-items: center;
+    }
+    header .header-container .food{
+        margin: 0 0 0 0;
+    }
+    
+}
+
+/* header nav responsive nav header container -- end */
+
+/* main started */
+
+/* section one started */
+
+
+main{
+    width: 100%;
+    /* height: 600px; */
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .section-1{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    /* background-color: rgb(39, 45, 218); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .section-1 .section-1-childs:nth-child(1){
+    width: 250px;
+    height: 220px;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0 0 30px 0;
+     text-align: center;
+     background-image: url("../img/veggie-burger-recipe-2-1650394698.jpg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+main .section-1 .section-1-childs:nth-child(2){
+    width: 250px;
+    height: 220px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0 0 30px 0;
+     text-align: center;
+     background-image: url("../img/-UberEats_Photo_App_In_Use-2.jpg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+main .section-1 .section-1-childs:nth-child(3){
+    width: 250px;
+    height: 220px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0 0 30px 0;
+     text-align: center;
+     background-image: url("../img/-cake-recipes-7-1-of-1.jpg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+main .section-1 .section-1-childs .section-1-hbox{
+    color: white;
+}
+
+@media only screen and (max-width:800px){
+    .section-1{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* section one end */
+
+/* section two started */
+
+.section-2{
+    width: 100%;
+    padding: 0 0 20px 0;
+    /* height: 500px; */
+    /* background-color:blueviolet ; */
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-2 h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+.section-2 .food-menu-nav{
+    width: 75%;
+    /* height: 50px; */
+    padding: 5px 0 5px 0;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.section-2 .food-menu-nav a{
+    width: 70px;
+    height: 30px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 0, 0, 0.63);
+}
+.section-2 .food-menu-nav a button{
+    width: 100%;
+    height: inherit;
+    font-size: 12px;
+    border-radius: inherit;
+    background-color: transparent;
+}
+.section-2 .section-2-menu{
+    width: 100%;
+    /* height: 300px; */
+    gap: 10px;
+    /* background-color:black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-2 .section-2-menu .menu-card{
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.section-2 .section-2-menu .menu-card img{
+    width: 90%;
+    height: 120px;
+}
+.section-2 .section-2-menu .menu-card h2{
+    font-size: 20px;
+    color: black;
+}
+
+.section-2 .section-2-menu .menu-card span{
+    color: rgba(255, 0, 0, 0.543);
+}
+.section-2 .section-2-menu .menu-card button{
+    width: 90px;
+    height: 25px;
+    background-color: rgba(255, 0, 0, 0.532);
+    color: white;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width:950px){
+    .section-2 .food-menu-nav{
+        width: 90%;
+    }
+    .section-2 .section-2-menu{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    .section-2 .section-2-menu .menu-card{
+        width: 230px;
+    }
+
+
+}
+@media only screen and (max-width:500px){
+    .section-2 .food-menu-nav{
+        width: 100%;
+    }
+    .section-2 .food-menu-nav a{
+        width: 25%;
+    }
+    .section-2 .section-2-menu .menu-card{
+        width: 60%;
+        
+    }
+}
+/* section two end */
+
+ /* section three started */ 
+
+ main .section-3{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/HOME_piza-1.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(60%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ main .section-3 .header-container{
+    width: 350px;
+    height: 250px;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+ main .section-3 .header-container span{
+     font-size: 20px;
+     color: white;
+ }
+ main .section-3 .header-container h1{
+    color: white;
+ }
+ main .section-3 .header-container h2{
+    font-size: 30px;
+    color: rgba(255, 255, 0, 0.525);
+ }
+ main .section-3 .header-container button{
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    background-color:red;
+    color: white;
+ }
+
+ @media only screen and (max-width:950px){
+    main .section-3{
+        height: 250px;
+    }
+ }
+
+ /* section three end */ 
+  /* section for end */
+main .section-4{
+    width: 80%;
+    /* height: 250px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0 5px 0;
+    
+}
+main .section-4 .header-container{
+    width: 200px;
+    height: 200px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+main .section-4 .header-container ion-icon{
+    font-size: 50px;
+}
+main .section-4 .header-container span{
+   text-decoration: underline;
+    text-decoration-color: yellow;
+}
+main .section-4 .header-container p{
+    font-size: 13px;
+}
+
+@media only screen and (max-width:650px){
+    main .section-4{
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+    main .section-4 .header-container{
+        width: 40%;
+    }
+ }
+ @media only screen and (max-width:450px){
+    main .section-4{
+        justify-content: center;
+
+     }
+     main .section-4 .header-container{
+         width: 80%;
+     }
+ }
+
+  main .section-5 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 5px 0;
+    /* background-color: black; */
+  }
+  main .section-5 .section-5-child:nth-child(1){
+    width: 25%;
+    height: 200px;
+    background-image: url(../img/michelle-obama-38.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }                
+  main .section-5 .section-5-child:nth-child(2){
+    width: 25%;
+    height: 200px;
+    background-image: url(../img/salon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }                
+  main .section-5 .section-5-child:nth-child(3){
+    width: 25%;
+    height: 200px;
+    background-image: url(../img/open-sandwiches.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }                
+  main .section-5 .section-5-child:nth-child(4){
+    width: 25%;
+    height: 200px;
+    background-image: url(../img/espresso-using-machine.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }                
+                 
+  @media only screen and (max-width:800px){
+    main .section-5{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    main .section-5 .section-5-child:nth-child(1),
+    main .section-5 .section-5-child:nth-child(2),
+    main .section-5 .section-5-child:nth-child(3),
+    main .section-5 .section-5-child:nth-child(4){
+        width: 40%;
+    }
+  }
+  @media only screen and (max-width:450px){
+    main .section-5{
+        justify-content: center;
+     
+    }
+    main .section-5 .section-5-child:nth-child(1),
+    main .section-5 .section-5-child:nth-child(2),
+    main .section-5 .section-5-child:nth-child(3),
+    main .section-5 .section-5-child:nth-child(4){
+       width: 80%;
+    }
+  }
+ 
+  main .section-6{
+    width: 100%;
+    /* background-color: blue; */
+    padding: 3px 0 3px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+main .section-6 iframe{
+    width: 100%;
+    height: 400px;
+
+}
+
+@media only screen and (max-width:650px){
+    main .section-6 iframe{
+        height: 270px;
+    }
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+footer .footer-1{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+} 
+footer .footer-1 .footer-1-childs{
+    width: 20%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    text-align: left;  
+}
+
+footer .footer-1 .footer-1-childs h2{
+    font-size: 10px;
+    color: white;
+}
+footer .footer-1 .footer-1-childs span{
+    font-size: 7px;
+    color: white;
+}
+
+footer .footer-1 .footer-1-childs:nth-child(3){
+    width: 28%;
+    color: white;
+}
+footer .footer-1 .footer-1-childs:nth-child(3) .child{
+    width: 100%;
+    height: 25px;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-1 .footer-1-childs:nth-child(3) .child input{
+    width: 65%;
+    border-radius: 10px;
+    font-size: 10px;
+}
+footer .footer-1 .footer-1-childs:nth-child(3) .child button{
+ width: 25%;
+ font-size: 7px;
+ border-radius: 10px;
+}
+
+footer .footer-2{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(195, 255, 0); */
+}
+footer .footer-2 h2{
+    font-size: 8px;
+    color: white;
+}
+footer .footer-2 .footer-2-childs{
+    font-size: 18px;
+    color: white;
+}
+
+@media only screen and (max-width:700px){
+    footer .footer-1{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:550px){
+    footer .footer-1{
+        width: 100%;
+        justify-content: center;
+
+        
+    }
+    footer .footer-1 .footer-1-childs{
+        width: 28%;
+        
+    }
+}
+@media only screen and (max-width:430px){
+    footer .footer-1{
+        flex-direction: column;
+    }
+    footer .footer-1 .footer-1-childs{
+        width: 90%;
+        height: 70px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;        
+    }
+    footer .footer-1 .footer-1-childs:nth-child(3){
+        width: 70%;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

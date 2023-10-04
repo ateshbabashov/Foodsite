@@ -1,0 +1,6 @@
+@import url("../Home/Css/home.css");
+.main-pages{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(174, 135, 210);
+}
